@@ -5,6 +5,9 @@ const Registration = ({ showMessage, setCurrentPage, theme }) => {
     if (type === "Individual"){
       setCurrentPage('individual_registration');
     }
+    else if (type === "Institution"){
+      setCurrentPage('Institution')
+    }
   };
 
   // Decide classes based on theme

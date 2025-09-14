@@ -173,3 +173,40 @@
     outline-color: gold;
     outline-width: 2px;
 }
+
+.add-team-button {
+  background-color: #2563eb;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-right: 1rem;
+}
+
+.add-team-button:hover:enabled {
+  background-color: #1d4ed8;
+}
+
+.add-team-button:disabled {
+  background-color: #6b7280;
+  color: #d1d5db;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.remove-team-button {
+  background-color: #ef4444;
+  color: white;
+  padding: 0.3rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  margin-left: 1rem;
+  transition: background-color 0.3s;
+}
+
+.remove-team-button:hover {
+  background-color: #b91c1c;
+}

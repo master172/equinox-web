@@ -11,7 +11,7 @@ import IndividualRegistration from './Comonents/IndividualRegistration';
 import EventsDataPanel from './Comonents/EventDetails';
 import "./Styles/Global.css";
 import "./Styles/Themes.css";
-
+import InstitutionRegistration from './Comonents/InstitutionRegistration';
 
 const App = () => {
     const [currentPage, setCurrentPage] = useState('home');
@@ -47,6 +47,8 @@ const App = () => {
                 return <IndividualRegistration theme={theme} />;
             case 'event_details':
                 return <EventsDataPanel onclick={setCurrentPage} />;
+            case 'Institution':
+                return <InstitutionRegistration></InstitutionRegistration>
             default:
                 return null;
         }
